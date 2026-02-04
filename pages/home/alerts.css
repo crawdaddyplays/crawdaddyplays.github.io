@@ -1,0 +1,131 @@
+:root {
+      --bg-dark: #0d1a26;
+      --bg-darker: #08121a;
+      --accent: #ff2d55;
+      --text: #e0f0ff;
+      --text-light: #a0c0e0;
+      --border: #1e3a5a;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #0d1a26 0%, #04121a 100%);
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 2.8rem;
+      margin: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-shadow: 0 4px 12px rgba(255,45,85,0.3);
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--accent);
+      font-size: 1.4rem;
+      margin: 0 0 40px;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 8px;
+      background: var(--bg-darker);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    }
+
+    .thead {
+      background: linear-gradient(90deg, #1a3a5a, #0f2a44);
+    }
+
+    .th {
+      padding: 16px 20px;
+      text-align: left;
+      font-weight: 700;
+      color: white;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .th:first-child { width: 80px; text-align: center; }
+    .th:nth-child(2) { width: 260px; }
+    .th:last-child { text-align: center; }
+
+    .row {
+      background: #132535;
+      transition: all 0.18s ease;
+    }
+
+    .row:hover {
+      background: #1a3a55;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    .td {
+      padding: 18px 20px;
+      font-size: 1.05rem;
+      vertical-align: middle;
+    }
+
+    .rank {
+      text-align: center;
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--accent);
+      text-shadow: 0 2px 8px rgba(255,45,85,0.4);
+    }
+
+    .player {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 600;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 12px rgba(255,45,85,0.25);
+    }
+
+    .record {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #c0e0ff;
+    }
+
+    .banned {
+      color: #ff6b6b;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      .subtitle { font-size: 1.2rem; }
+      .th, .td { padding: 14px 12px; font-size: 0.95rem; }
+      .avatar { width: 40px; height: 40px; }
+      .player { gap: 10px; }
+    }
