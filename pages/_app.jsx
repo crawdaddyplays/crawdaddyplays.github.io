@@ -8,9 +8,9 @@ export default function MyApp({ Component, pageProps }) {
   ]
   return <>
     <ul>
-    {links.map(l => <li key={l}><Link href={l}>Go To {l}</Link></li>)}
+      {links.map(l => <li key={l}><Link href={l}>Go To {l}</Link></li>)}
     </ul>
- 
+
     <Component {...pageProps} />
     </>
 }
