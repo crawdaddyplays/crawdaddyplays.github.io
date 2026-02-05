@@ -1,6 +1,6 @@
 import App, { AppContext, AppInitialProps, AppProps } from 'next/app'
 
-import './madden.css'; // ← put the CSS above in this file
+import './madden.css'
 import prernk from './madden_rankings.json'
 type AppOwnProps = { example: string }
 
