@@ -1,4 +1,4 @@
 
 export default function Home () {
-  return <>Home</>
+  return <>page /home</>
 }

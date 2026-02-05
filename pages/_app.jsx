@@ -4,7 +4,7 @@ export default function MyApp({ Component, pageProps }) {
   const links = [
     '/',
     '/home',
-    '/home/alerts',
+    '/madden',
   ]
   return <>
     <ul>
