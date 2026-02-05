@@ -1,6 +1,6 @@
 import App, { AppContext, AppInitialProps, AppProps } from 'next/app'
 
-import './alerts.css'; // ← put the CSS above in this file
+import './madden.css'; // ← put the CSS above in this file
 type AppOwnProps = { example: string }
 
 
