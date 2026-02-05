@@ -7,7 +7,7 @@ export default function MyApp({ Component, pageProps }) {
     '/madden',
   ]
   return <>
-    <ul>
+    <ul style={{display: "none"}}>
       {links.map(l => <li key={l}><Link href={l}>Go To {l}</Link></li>)}
     </ul>
 
