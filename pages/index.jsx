@@ -1,3 +1,4 @@
+import Link from "next/link"
 export default function Index () {
-  return <>Index page</>
+  return <Link href="/madden">Go to madden rankings</Link>
 }
